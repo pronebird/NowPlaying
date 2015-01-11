@@ -1,0 +1,4 @@
+LIBRARY      NowPlaying
+
+EXPORTS
+	CreateInfiumPLUGIN

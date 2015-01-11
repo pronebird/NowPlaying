@@ -1,0 +1,247 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,3
+ PRODUCTVERSION 1,0,0,3
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041904b0"
+        BEGIN
+            VALUE "FileDescription", "Russian Resource Dynamic Link Library"
+            VALUE "FileVersion", "1, 0, 0, 3"
+            VALUE "InternalName", "Russian"
+            VALUE "LegalCopyright", "Copyright (C) 2007-2008 Mihaylov A. aka AbsoluteZero"
+            VALUE "OriginalFilename", "Russian.dll"
+            VALUE "ProductName", "Russian Resource Dynamic Link Library"
+            VALUE "ProductVersion", "1, 0, 0, 3"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x419, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GENERAL DIALOGEX 0, 0, 212, 204
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,14,19,184,118
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | TBS_ENABLESELRANGE | TBS_TOOLTIPS | WS_TABSTOP,7,177,198,20
+    LTEXT           "Интервал обновления (секунды):",IDC_STATIC,7,168,198,9
+    GROUPBOX        "Медиаплеер",IDC_STATIC,7,7,198,138
+    LTEXT           "Язык:",IDC_STATIC,9,152,34,8
+    CONTROL         "",IDC_COMBOBOXEX1,"ComboBoxEx32",CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP,34,149,171,272
+END
+
+IDD_PLUGINS DIALOGEX 0, 0, 212, 190
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,7,198,85
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,95,198,88
+END
+
+IDD_EXTENDED DIALOGEX 0, 0, 212, 199
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Название:",IDC_STATIC,14,22,36,8
+    EDITTEXT        IDC_EDIT1,51,19,147,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,52,36,146,32,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Статус:",IDC_STATIC,14,38,34,8
+    GROUPBOX        "Форматирование",IDC_STATIC,7,7,198,101
+    GROUPBOX        "Особые свойства",IDC_STATIC,7,111,198,81
+    CONTROL         "Быстрый переключатель",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,124,99,10
+    CONTROL         "Изменять только содержимое статуса",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,161,146,10
+    CONTROL         "Изменять статус при выбранной иконке:",IDC_CHECK3,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,173,151,10
+    CONTROL         "",IDC_COMBOBOXEX1,"ComboBoxEx32",CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP,168,171,30,83
+    EDITTEXT        IDC_EDIT3,52,71,146,32,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Альт\nСтатус:",IDC_STATIC,14,72,37,18
+    CONTROL         "В системном трее",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,137,75,10
+    CONTROL         "Под аватарой пользователя",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,149,109,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_PLUGINS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_EXTENDED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icons\\stddll.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "bitmaps\\xstatuses.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING122           "Русский"
+    IDS_STRING123           "1049"
+    IDS_STRING124           "Модуль"
+    IDS_STRING125           "Описание"
+    IDS_STRING126           "Поддержка API"
+    IDS_STRING127           "Свойство"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING128           "Значение"
+    IDS_STRING129           "Комментарии"
+    IDS_STRING130           "Внутреннее имя"
+    IDS_STRING131           "Название продукта"
+    IDS_STRING132           "Название компании"
+    IDS_STRING133           "Авторские права"
+    IDS_STRING134           "Версия продукта"
+    IDS_STRING135           "Описание файла"
+    IDS_STRING136           "Торговая марка"
+    IDS_STRING137           "Личная сборка"
+    IDS_STRING138           "Версия файла"
+    IDS_STRING139           "Оригинальное имя файла"
+    IDS_STRING140           "Особая сборка"
+    IDS_STRING141           "Общие"
+    IDS_STRING142           "Расширенные"
+    IDS_STRING143           "Плагины"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING144           "Да"
+    IDS_STRING145           "Нет"
+    IDS_STRING146           "Языковые настройки вступят в силу после того как вы заново откроете окно настроек!"
+    IDS_STRING147           "Поддерживаемые теги:\n{%artist%} - исполнитель\n{%title%} - название\n{%album%} - альбом\n{%genre%} - жанр\n{%number%} - номер\n{%length%} - продолжительность\n{%file%} - имя файла"
+    IDS_STRING148           "Поддерживаемые теги:\n{%status%} - отформатированная статусная строка"
+    IDS_STRING149           "GUID"
+    IDS_STRING150           "Now Playing"
+    IDS_STRING151           "Свойства ""Now Playing"" плагина"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
